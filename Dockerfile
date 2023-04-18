@@ -15,7 +15,7 @@ WORKDIR /app
 COPY package*.json yarn.lock /app/
 RUN touch .env
 RUN echo NEXT_PUBLIC_UC_API=https://uc.asetcoyadak.com/api >> .env
-RUN echo NEXT_PUBLIC_WCS_HOST=https://api.asetcoyadak.com/api >> .env
+RUN echo NEXT_PUBLIC_WCS_HOST=https://web.asetcoyadak.com/api >> .env
 RUN echo NEXT_PUBLIC_GOD_FTP_SERVER=http://107.181.112.145/ >> .env
 #RUN echo NEXT_PUBLIC_DASHBOARD_URL=https://web.homacall.com >> .env
 RUN echo NEXT_PUBLIC_GA_MEASUREMENT_ID=G-N4GCLZCKXJ >> .env
